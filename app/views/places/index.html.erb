@@ -1,1 +1,7 @@
-<h1>Welcome to Ken's Yelp-esque attempt</h1>
+<% @places.each do |place| %>
+<div>
+  <h1><%= place.name %></h1>
+  <h1><%= place.description %></h1>
+  <h1><%= place.address %></h1> 
+</div>
+<% end %>
