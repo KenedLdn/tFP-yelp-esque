@@ -6,7 +6,6 @@ gem 'rails', '4.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-
 # Use Twitter Boostrap
 gem 'bootstrap-sass', '~> 3.3.5.1'
 
@@ -15,6 +14,9 @@ gem 'sprockets', '2.11.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
+
+# Use Kaminari for pagination
+gem 'kaminari'
 
 # Include HTML Beautifier
 gem 'htmlbeautifier'
