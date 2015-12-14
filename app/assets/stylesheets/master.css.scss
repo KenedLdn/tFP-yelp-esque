@@ -3,9 +3,9 @@ body{
   font-family: 'quicksandbold', sans-serif;
 }
 
-.navbar-brand{
+.navbar-inverse .navbar-brand{
   font-family: 'kaushan_scriptregular', sans-serif;
-  color: #FFF;
+  color: #FAE01B;
   font-size: 30px;
 }
 
@@ -17,18 +17,22 @@ body{
   background: url('/assets/wild_oliva.png');
   border-radius: 0;
   border: 0px solid;
-  box-shadow: 0px 10px 5px grey;
+  box-shadow: 0px 10px 5px #FAFA1B;
 }
 
 .card-tallbox {
-    font-family: 'quicksandregular', sans-serif;
-    background-color: #ffffff;
-    border: solid 1px #D9D9DE;
-    border-radius: 6px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    position: relative;
-    font-size: 12px;
+  font-family: 'quicksandregular', sans-serif;
+  background-color: #ffffff;
+  border: solid 1px #D9D9DE;
+  border-radius: 6px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 12px;
+}
+
+.card-tallbox h6{
+    font-family: 'quicksandbold', sans-serif;
 }
 
 .container-fluid{
