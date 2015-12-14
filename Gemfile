@@ -18,6 +18,9 @@ gem 'sass-rails'
 # Use Kaminari for pagination
 gem 'kaminari'
 
+# Incldue Simple Form
+gem 'simple_form'
+
 # Include HTML Beautifier
 gem 'htmlbeautifier'
 
