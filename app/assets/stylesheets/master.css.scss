@@ -1,4 +1,27 @@
+body{
+  background: url('/assets/whitewall.png');
+  font-family: 'quicksandbold', sans-serif;
+}
+
+.navbar-brand{
+  font-family: 'kaushan_scriptregular', sans-serif;
+  color: #FFF;
+  font-size: 30px;
+}
+
+.navbar .nav > li > a {
+  color: #FFF;
+}
+
+.navbar.navbar-inverse{
+  background: url('/assets/wild_oliva.png');
+  border-radius: 0;
+  border: 0px solid;
+  box-shadow: 0px 10px 5px grey;
+}
+
 .card-tallbox {
+    font-family: 'quicksandregular', sans-serif;
     background-color: #ffffff;
     border: solid 1px #D9D9DE;
     border-radius: 6px;
@@ -8,7 +31,7 @@
     font-size: 12px;
 }
 
-.row {
+.container-fluid{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,7 +45,6 @@
 }
 
 .image {
-  min-width: 100%;
   max-width: 100%;
   height: auto;
 }
