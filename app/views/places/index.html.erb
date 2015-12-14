@@ -1,8 +1,14 @@
-<% @places.each do |place| %>
-<div>
-  <h1><%= place.name %></h1>
-  <h1><%= place.description %></h1>
-  <h1><%= place.address %></h1> 
+<div class="container-fluid">
+  <div class="col-xs-12">
+    <div class="row">
+      <% @places.each do |place| %>
+        <div class="card-tallbox col-xs-3">
+              <img src="/dummypic.jpg" class="image">
+          <h6><%= place.name %></h6>
+          <i><p><%= place.address %></p></i>
+          <p><%= place.description %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<% end %>

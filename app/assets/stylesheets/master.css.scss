@@ -1,0 +1,28 @@
+.card-tallbox {
+    background-color: #ffffff;
+    border: solid 1px #D9D9DE;
+    border-radius: 6px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 12px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dummycolumn{
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.image {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
