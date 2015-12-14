@@ -24,7 +24,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><%= link_to 'Add Place', new_place_path %></li>
+          <li><%= link_to new_place_path do %>
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+            Add Place
+          <% end %>
+          </li>
         </ul>
           
         <ul class="nav navbar-nav navbar-right">
