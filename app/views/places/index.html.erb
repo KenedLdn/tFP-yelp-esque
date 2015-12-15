@@ -9,6 +9,10 @@
             <h6><%= place.name %></h6>
             <i><p><%= place.address %></p></i>
             <p><%= place.description %></p>
+            
+            <% if place.user.present? %>
+              <small><%= "Added by #{place.user.email}" %></small>
+            <% end %>
           </div>
       <% end %>
   <!--   </div>
