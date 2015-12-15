@@ -3,6 +3,10 @@ body{
   font-family: 'quicksandbold', sans-serif;
 }
 
+.checkbox input[type="checkbox"] {
+  margin-left: 0;
+}
+
 .clear {
   clear:both;
 }
@@ -35,7 +39,7 @@ body{
   font-size: 12px;
 }
 
-.card-tallbox h6{
+.card-tallbox h2, h6{
     font-family: 'quicksandbold', sans-serif;
 }
 
