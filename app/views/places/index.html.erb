@@ -6,7 +6,7 @@
       <% @places.each do |place| %>
           <div class="card-tallbox col-xs-5">
             <img src="/dummypic.jpg" class="image">
-            <h6><%= place.name %></h6>
+            <h6><%= link_to place.name, place_path(place) %></h6>
             <i><p><%= place.address %></p></i>
             <p><%= place.description %></p>
             
