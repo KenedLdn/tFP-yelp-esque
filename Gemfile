@@ -18,6 +18,9 @@ gem 'sass-rails'
 # Use Kaminari for pagination
 gem 'kaminari'
 
+# Use Devise for user authentication
+gem 'devise', '>= 3.2.4'
+
 # Incldue Simple Form
 gem 'simple_form'
 
