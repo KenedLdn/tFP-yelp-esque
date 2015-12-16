@@ -6,9 +6,11 @@
     <%= f.input :description %>
     <br />
     <%= f.submit 'Update', :class => 'btn btn-success' %>
-    <br class="clear"/>
+    <br class="clear" />
     <br />
-    <br />
+    <hr class="clear" />
+    <%= link_to 'Delete Place', place_path(@place), :method => :delete, :data => {:confirm => 'Are you sure to delete this place?'}, :class => 'btn btn-danger pull-right' %>
+    <br class="clear" />
     <br />
   <% end %>
 </dvi>
