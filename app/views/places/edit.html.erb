@@ -1,0 +1,14 @@
+<div class="card-tallbox col-xs-10 col-xs-offset-1">
+  <h2>Update Details for this Place</h2>
+  <%= simple_form_for @place do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Update', :class => 'btn btn-success' %>
+    <br class="clear"/>
+    <br />
+    <br />
+    <br />
+  <% end %>
+</dvi>

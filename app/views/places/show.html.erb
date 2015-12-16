@@ -2,4 +2,11 @@
   <h1><%= @place.name %></h1>
   <i><p><%= "Address: #{@place.address}" %></p></i>
   <p><%= @place.description %></p>
+  <br />
+  <div class="pull-right">
+    <%= link_to "Edit", edit_place_path(@place), :class => 'btn btn-primary' %>
+  </div>
+  <br class="clear"/>
+  <br />
+  <br />
 </div>
