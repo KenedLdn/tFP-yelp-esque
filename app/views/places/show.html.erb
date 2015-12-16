@@ -4,7 +4,9 @@
   <p><%= @place.description %></p>
   <br />
   <div class="pull-right">
-    <%= link_to "Edit", edit_place_path(@place), :class => 'btn btn-primary' %>
+    <% if current_user && current_user == @place.user %>
+      <%= link_to "Edit", edit_place_path(@place), :class => 'btn btn-primary' %>
+    <% end %>
   </div>
   <br class="clear"/>
   <br />
