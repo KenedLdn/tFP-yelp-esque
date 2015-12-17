@@ -9,7 +9,9 @@
     <br class="clear" />
     <br />
     <hr class="clear" />
-    <%= link_to 'Delete Place', place_path(@place), :method => :delete, :data => {:confirm => 'Are you sure to delete this place?'}, :class => 'btn btn-danger pull-right' %>
+    <% if current_user && current_user == @place.user %>
+      <%= link_to 'Delete Place', place_path(@place), :method => :delete, :data => {:confirm => 'Are you sure to delete this place?'}, :class => 'btn btn-danger pull-right' %>
+    <% end %>
     <br class="clear" />
     <br />
   <% end %>

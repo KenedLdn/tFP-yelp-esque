@@ -3,6 +3,13 @@ body{
   font-family: 'quicksandbold', sans-serif;
 }
 
+.field_with_errors{
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+}
+
 .checkbox input[type="checkbox"] {
   margin-left: 0;
 }
