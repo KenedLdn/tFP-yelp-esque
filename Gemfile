@@ -12,6 +12,12 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 # Include sprockets
 gem 'sprockets', '2.11.0'
 
+# Use GeoCoder
+gem 'geocoder'
+
+# Use Figaro
+gem 'figaro', '>= 1.0.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
