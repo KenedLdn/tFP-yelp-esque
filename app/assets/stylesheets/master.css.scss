@@ -1,7 +1,14 @@
 body{
   background: url('/assets/whitewall.png');
   font-family: 'quicksandbold', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+#map {
+      height: 300px;
+    }
 
 .field_with_errors{
   color: #ff3333;
