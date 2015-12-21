@@ -3,11 +3,11 @@ class Comment < ActiveRecord::Base
   belongs_to :place
 
   RATINGS = {
-    '☆' => '1_star',
-    '☆☆' => '2_stars',
-    '☆☆☆' => '3_stars',
-    '☆☆☆☆' => '4_stars',
-    '☆☆☆☆☆' => '5_stars',
+    '★☆☆☆☆' => '1_star',
+    '★★☆☆☆' => '2_stars',
+    '★★★☆☆' => '3_stars',
+    '★★★★☆' => '4_stars',
+    '★★★★★' => '5_stars',
   }
 
   def humanized_rating
@@ -15,4 +15,5 @@ class Comment < ActiveRecord::Base
   end
 
   validates :rating, :presence => true
+  validates :message, :presence => true
 end

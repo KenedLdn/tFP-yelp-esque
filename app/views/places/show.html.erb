@@ -1,5 +1,13 @@
 <div class="card-tallbox col-xs-10 col-xs-offset-1">
-  <h1><%= @place.name %></h1>
+  <h1 class="pull-left"><%= @place.name %></h1>
+  <br />
+  <div class="pull-right">
+    <% if current_user && current_user == @place.user %>
+      <%= link_to "Edit Place Details", edit_place_path(@place), :class => 'btn btn-info' %>
+    <% end %>
+  </div>
+  <br class="clear"/>
+
   <i><p><%= "Address: #{@place.address}" %></p></i>
   <p><%= @place.description %></p>
   <br />
@@ -28,18 +36,7 @@
     <div id="map"></div>
   <% end %>
   <br />
-  
-  <div class="pull-right">
-    <% if current_user && current_user == @place.user %>
-      <%= link_to "Edit", edit_place_path(@place), :class => 'btn btn-primary' %>
-    <% end %>
-  </div>
-  <br class="clear"/>
-
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-    Add a Comment
-  </button>
+  <br />
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -68,19 +65,25 @@
     </div>
   </div>
 
-  <h1>Comments</h1>
+  <h2 class="pull-left">Comments</h2>
+  <br />
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">
+    Add a Comment
+  </button>
+  <br class="clear" />
   <% @place.comments.each do |comment| %>
-    <div>
+    <div class="col-xs-12 col-sm-6">
       <blockquote>
+        <%= comment.message %>
+        <br />
         <% if comment.humanized_rating.present? %>
-          <b><%= comment.humanized_rating %><b>
+          <b id="star"><%= comment.humanized_rating %><b>
         <% end %>
-          <%= comment.message %>
         <small><%= comment.user.email %></small>
       </blockquote>
     </div>
   <% end %>
-      <br />
-      <br />
-      <br />
+  <br />
+  <br />
 </div>
