@@ -4,16 +4,29 @@
       <%= paginate @places %>
       <br />
       <% @places.each do |place| %>
-          <div class="card-tallbox col-xs-5">
-            <img src="/dummypic.jpg" class="image">
-            <h6><%= link_to place.name, place_path(place) %></h6>
-            <i><p><%= place.address %></p></i>
-            <p><%= place.description %></p>
-            
-            <% if place.user.present? %>
-              <small><%= "Added by #{place.user.email}" %></small>
-            <% end %>
-          </div>
+        <div class="card-tallbox col-xs-5">
+          <img src="/dummypic.jpg" class="image">
+          <h6><%= link_to place.name, place_path(place) %></h6>
+          <i><p><%= place.address %></p></i>
+          <p><%= place.description %></p>
+          
+          <% if place.user.present? %>
+            <small><%= "Added by #{place.user.email}" %></small>
+          <% end %>
+
+          <% if place.comments.present? %>
+            <div class="col-xs-12">
+              <blockquote>
+                <%= place.comments.order("id ASC").last.message %>
+                <br />
+                <% if place.comments.order("id ASC").last.humanized_rating.present? %>
+                  <b id="star"><%= place.comments.order("id ASC").last.humanized_rating %></b>
+                <% end %>
+                <small><%= place.comments.order("id ASC").last.user.email %></small>
+              </blockquote>
+            </div>
+          <% end %>
+        </div>
       <% end %>
   <!--   </div>
   </div>
