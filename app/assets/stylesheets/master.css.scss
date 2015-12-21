@@ -57,7 +57,7 @@ body{
   font-size: 12px;
 }
 
-.card-tallbox h2, h6{
+.card-tallbox h1, h2, h6{
     font-family: 'quicksandbold', sans-serif;
 }
 
@@ -110,4 +110,8 @@ blockquote p {
   display: table-cell;
   float: none;
   height: 100%;
+}
+
+.img {
+  height: 240px;
 }

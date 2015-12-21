@@ -18,6 +18,9 @@ gem 'geocoder'
 # Use Figaro
 gem 'figaro', '>= 1.0.0'
 
+# Use Carrier Wave
+gem 'carrierwave'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
