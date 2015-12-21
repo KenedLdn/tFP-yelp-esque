@@ -1,12 +1,12 @@
-<!-- <div class="container-fluid">
-  <div class="col-xs-12">
-    <div class="container-fluid col-xs-10 col-xs-offset-1"> -->
-      <%= paginate @places %>
-      <br />
-      <% @places.each do |place| %>
-        <div class="card-tallbox col-xs-5">
-          <img src="/dummypic.jpg" class="image">
-          <h6><%= link_to place.name, place_path(place) %></h6>
+<%= paginate @places %>
+<br />
+
+<div class="container">
+  <div class="row">
+    <% @places.each do |place| %>
+      <div class="col-xs-6">
+        <div class="card-tallbox col-xs-12">
+          <h3><%= link_to place.name, place_path(place) %></h3>
           <i><p><%= place.address %></p></i>
           <p><%= place.description %></p>
           
@@ -27,9 +27,7 @@
             </div>
           <% end %>
         </div>
-      <% end %>
-  <!--   </div>
+      </div>
+    <% end %>
   </div>
 </div>
-      
-       -->
