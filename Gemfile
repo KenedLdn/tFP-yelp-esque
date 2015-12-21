@@ -21,6 +21,9 @@ gem 'figaro', '>= 1.0.0'
 # Use Carrier Wave
 gem 'carrierwave'
 
+# Use Fog
+gem "fog", "~> 1.3.1"
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
