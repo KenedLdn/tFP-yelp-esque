@@ -5,21 +5,26 @@
     <% if current_user && current_user == @place.user %>
       <%= link_to "Edit Place Details", edit_place_path(@place), :class => 'btn btn-info' %>
     <% end %>
+    <% if current_user %>
+      <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal_Photo">
+        Add Photos
+      </button>
+    <br class="clear"/>
+    <br />
+    <% end %>
   </div>
   <br class="clear"/>
 
   <i><h4><%= "Address: #{@place.address}" %></h4></i>
   <h4><%= "Description: #{@place.description}" %></h4>
+  <% if @place.user.present? %>
+    <small class="pull-right"><%= "Added by #{@place.user.email}" %></small>
+  <% end %>
+  <br class="clear"/>
   <br />
 
 <!-- Button trigger modal for Photos-->
-  <% if current_user %>
-    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal_Photo">
-      Add Photos
-    </button>
-  <br class="clear"/>
-  <br />
-  <% end %>
+  
 
   <% @place.photos.order("id ASC").each do |photo| %>
     <div class="col-xs-12 col-sm-4">
@@ -43,6 +48,7 @@
           <div class="modal-body">
               <div class="clear">
                 <%= f.input :picture %>
+                <br />
                 <%= f.input :caption, :label => 'Caption' %>
               </div>
               <br class="clear"/>
