@@ -11,7 +11,7 @@
           <p><%= place.description %></p>
           
           <% if place.photos.present? %>
-              <%= image_tag place.photos.order("id DESC").last.picture, :class => "img-responsive img"%>
+              <%= link_to image_tag(place.photos.order("id DESC").last.picture, :class => "img-responsive img"), place_path(place)%>
           <% end %>
           <br />
 
