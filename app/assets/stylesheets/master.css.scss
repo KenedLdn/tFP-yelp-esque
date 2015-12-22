@@ -44,6 +44,7 @@ body{
   border-radius: 0;
   border: 0px solid;
   box-shadow: 0px 10px 5px #FAFA1B;
+  margin-bottom: 0;
 }
 
 .card-tallbox {
@@ -126,4 +127,26 @@ blockquote p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight:100;
+    height: 35%;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
