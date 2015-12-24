@@ -27,6 +27,9 @@ gem "fog", "~> 1.3.1"
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
+# Use FriendlyID
+gem 'friendly_id', '~> 5.1.0'
+
 # Use Kaminari for pagination
 gem 'kaminari'
 
