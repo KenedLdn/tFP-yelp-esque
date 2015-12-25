@@ -18,7 +18,7 @@
   <i><h4><%= "Address: #{@place.address}" %></h4></i>
   <h4><%= "Description: #{@place.description}" %></h4>
   <% if @place.user.present? %>
-    <small class="pull-right"><%= "Added by #{@place.user.email}" %></small>
+    <small class="pull-right"><%= "Added by #{@place.user.username}" %></small>
   <% end %>
   <br class="clear"/>
   <br />
@@ -133,7 +133,7 @@
         <% if comment.humanized_rating.present? %>
           <b id="star"><%= comment.humanized_rating %></b>
         <% end %>
-        <small><%= comment.user.email %></small>
+        <small><%= comment.user.username %></small>
       </blockquote>
     </div>
   <% end %>

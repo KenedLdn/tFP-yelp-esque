@@ -65,7 +65,7 @@
                 <% if place.comments.order("id ASC").last.humanized_rating.present? %>
                   <b id="star"><%= place.comments.order("id ASC").last.humanized_rating %></b>
                 <% end %>
-                <small><%= place.comments.order("id ASC").last.user.email %></small>
+                <small><%= place.comments.order("id ASC").last.user.username %></small>
               </blockquote>
             </div>
           <% end %>
