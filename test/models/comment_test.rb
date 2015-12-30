@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class CommentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "humanized_rating" do
+    user = FactoryGirl.create(:user)
+    comment = FactoryGirl.create(:comment, :user => user)
+
+    expected = '★★★★☆'
+    actual = comment.humanized_rating
+    assert_equal expected, actual
+  end
 end

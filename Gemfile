@@ -42,6 +42,9 @@ gem 'simple_form'
 # Include HTML Beautifier
 gem 'htmlbeautifier'
 
+# Use FactoryGirl
+gem 'factory_girl_rails', '~> 4.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
