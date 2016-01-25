@@ -39,9 +39,6 @@ gem 'devise', '>= 3.2.4'
 # Incldue Simple Form
 gem 'simple_form'
 
-# Include HTML Beautifier
-gem 'htmlbeautifier'
-
 # Use FactoryGirl
 gem 'factory_girl_rails', '~> 4.0'
 
